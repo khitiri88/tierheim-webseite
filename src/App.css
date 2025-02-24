@@ -1,3 +1,4 @@
+/* App.css */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 body {
@@ -5,7 +6,7 @@ body {
   padding: 0;
   background-color: #FFF7EB;
   color: #333;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -40,4 +41,128 @@ button, .MuiButton-root {
 
 button:hover, .MuiButton-root:hover {
   background-color: #e65a24 !important;
+}
+
+/* Footer */
+footer {
+  background-color: #FF914D;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+  color: white;
+}
+
+/* Navbar Styles */
+.storybook-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Page Styles */
+.storybook-page {
+  margin: 0 auto;
+  padding: 48px 20px;
+  max-width: 600px;
+  color: #333;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.storybook-page h2 {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+/* Buttons */
+.storybook-button {
+  display: inline-block;
+  cursor: pointer;
+  border: 0;
+  border-radius: 3em;
+  font-weight: 700;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.storybook-button--primary {
+  background-color: #555ab9;
+  color: white;
+}
+
+.storybook-button--secondary {
+  background-color: transparent;
+  color: #333;
+}
+
+.storybook-button--small {
+  padding: 10px 16px;
+  font-size: 12px;
+}
+
+.storybook-button--medium {
+  padding: 11px 20px;
+  font-size: 14px;
+}
+
+.storybook-button--large {
+  padding: 12px 24px;
+  font-size: 16px;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1100;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.modal-header {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #5E2D84;
+}
+
+.modal-body {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.modal-close {
+  background-color: #FF6F3C;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.modal-close:hover {
+  background-color: #e65a24;
 }

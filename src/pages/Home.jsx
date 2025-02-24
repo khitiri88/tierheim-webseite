@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Typography, Box } from "@mui/material";
+import HomeImage from "../assets/images/Home.png"; // 📌 Lokales Bild importieren
 
 const Home = () => {
   return (
@@ -29,7 +30,7 @@ const Home = () => {
       {/* Hauptbild */}
       <Box
         component="img"
-        src="https://www.nylabone.com/-/media/project/oneweb/nylabone/images/dog101/10-great-family-dogs/dogs_running_with_children_cropped.jpg?h=320&iar=0&w=710&hash=8BB73AF06474975D7546A73B37CDA1D6"
+        src={HomeImage} // 📌 Lokales Bild verwenden
         alt="Tiere und Kinder"
         sx={{ width: "100%", borderRadius: "10px", maxHeight: "400px", objectFit: "cover" }}
       />
