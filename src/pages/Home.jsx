@@ -1,11 +1,9 @@
 import React from "react";
 import { Container, Typography, Box } from "@mui/material";
-import HomeImage from "../assets/images/Home.png"; // 📌 Lokales Bild importieren
 
 const Home = () => {
   return (
     <Container maxWidth="lg" sx={{ textAlign: "center", mt: 5 }}>
-      {/* Begrüßungstext */}
       <Typography variant="h3" color="primary" gutterBottom>
         Willkommen im Tierheim
       </Typography>
@@ -13,7 +11,6 @@ const Home = () => {
         Hier kannst du Tiere zur Adoption finden.
       </Typography>
 
-      {/* Warnung zur Adoption */}
       <Box
         sx={{
           backgroundColor: "#FFC107",
@@ -27,10 +24,9 @@ const Home = () => {
         dass du bereit bist, einem Tier ein dauerhaftes Zuhause zu geben.
       </Box>
 
-      {/* Hauptbild */}
       <Box
         component="img"
-        src={HomeImage} // 📌 Lokales Bild verwenden
+        src="/tierheim-webseite/images/Home.png"
         alt="Tiere und Kinder"
         sx={{ width: "100%", borderRadius: "10px", maxHeight: "400px", objectFit: "cover" }}
       />

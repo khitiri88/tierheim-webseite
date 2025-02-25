@@ -11,8 +11,7 @@ const Navbar = () => {
   const handleMenuOpen = (event) => setAnchorEl(event.currentTarget);
   const handleMenuClose = () => setAnchorEl(null);
 
-  const openModal = (title, content) => {
-    console.log("Modal wird geöffnet:", title);  // <--- Debugging
+  const openModal = (title, content) => {    
     setModalData({ title, content });
   };
   
@@ -26,7 +25,7 @@ const Navbar = () => {
             sx={{ cursor: "pointer", fontWeight: "bold", color: "#4A235A" }} 
             onClick={() => navigate("/")}
           >
-            🐾 Tierheim
+            🐾 TIERHEIM
           </Typography>
 
           <div>
