@@ -26,7 +26,7 @@ const Home = () => {
 
       <Box
         component="img"
-        src="/tierheim-webseite/images/Home.png"
+        src="/images/Home.png"
         alt="Tiere und Kinder"
         sx={{ width: "100%", borderRadius: "10px", maxHeight: "400px", objectFit: "cover" }}
       />
