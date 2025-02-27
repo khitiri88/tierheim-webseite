@@ -4,18 +4,18 @@
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://khitiri88.github.io/tierheim-webseite",
-  "scripts": {
-    "start": "vite",
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "lint": "eslint .",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "chromatic": "npx chromatic --project-token=chpt_bbdccefd7ccffdc",
-    "predeploy": "npm run build",
-    "deploy": "npm run build && git add . && git commit -m 'Update build files' && git push"
-  },
+"scripts": {
+  "start": "vite",
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
+  "lint": "eslint .",
+  "storybook": "storybook dev -p 6006",
+  "build-storybook": "storybook build",
+  "chromatic": "npx chromatic --project-token=chpt_bbdccefd7ccffdc",
+  "predeploy": "npm run build",
+  "deploy": "vite build && git add . && git commit -m 'Update build files' && git push"
+},
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
