@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom"; // Router entfernt!
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -7,7 +7,7 @@ import AnimalsList from "./pages/AnimalsList";
 
 const App = () => {
   return (
-    <Router>
+    <>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -17,7 +17,7 @@ const App = () => {
         <Route path="/voegel" element={<AnimalsList category="voegel" />} />
       </Routes>
       <Footer />
-    </Router>
+    </>
   );
 };
 
