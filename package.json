@@ -14,7 +14,7 @@
     "build-storybook": "storybook build",
     "chromatic": "npx chromatic --project-token=chpt_bbdccefd7ccffdc",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run build && git add . && git commit -m 'Update build files' && git push"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
