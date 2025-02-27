@@ -23,11 +23,11 @@ const Footer = () => {
         }}
       >
         <Typography variant="body2" color="white">
-          <Link href="#" onClick={() => openModal("Über Uns", "Wir helfen Tieren seit vielen Jahren.")} color="inherit">
+          <Link href="#" onClick={() => openModal("Über Uns", "Wir helfen Tieren seit vielen Jahren und suchen liebevolle Besitzer.")} color="inherit">
             Über Uns
           </Link>
           {" | "}
-          <Link href="#" onClick={() => openModal("Öffnungszeiten", "Mo - Fr, 10:00 - 18:00")} color="inherit">
+          <Link href="#" onClick={() => openModal("Öffnungszeiten", "Unsere Öffnungszeiten: Mo - Fr, 10:00 - 18:00")} color="inherit">
             Öffnungszeiten
           </Link>
           {" | "}
